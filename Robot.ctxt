@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Robot
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Robot\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=void\ act()
+comment2.params=
+comment2.target=void\ checkKeyPress()
+comment3.params=
+comment3.target=void\ showStatus()
+comment4.params=
+comment4.target=void\ addPoints()
+comment5.params=
+comment5.target=void\ loseHp()
+comment6.params=
+comment6.target=void\ hitPizza()
+comment7.params=
+comment7.target=void\ detectBlockCollision()
+comment8.params=
+comment8.target=void\ detectWallCollision()
+comment9.params=
+comment9.target=void\ hitHouse()
+numComments=10
