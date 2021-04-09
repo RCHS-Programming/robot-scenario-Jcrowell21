@@ -8,6 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Robot extends Actor
 {
+    private GreenfootImage robotimage1= new GreenfootImage("man01.png");
+    private GreenfootImage robotimage2= new GreenfootImage("man02.png");
     int Hp = 10;
     int Points = 0;
  public void act() 
@@ -80,10 +82,11 @@ public class Robot extends Actor
  {
     Hp = Hp - 1;
  }
- public void hitPizza()
+ public void eatPizza()
  {
       if (isTouching(Pizza.class) )
       {
+         Greenfoot.playSound("eat.wav");
          removeTouching(Pizza.class);
          addPoints();
       }
@@ -92,6 +95,7 @@ public class Robot extends Actor
  {
       if (isTouching(Block.class) )
       {
+        Greenfoot.playSound("hurt.wav");
         setLocation(700,560);
         loseHp();
       }
@@ -100,7 +104,8 @@ public class Robot extends Actor
  {
       if (isTouching(Wall.class) )
       {
-        setLocation(700,560);
+          Greenfoot.playSound("hurt.wav");
+          setLocation(700,560);
       }
  }
  public void hitHouse()
